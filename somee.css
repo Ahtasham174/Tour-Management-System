@@ -1,0 +1,11 @@
+﻿a[href="http://somee.com"],
+script[src*="ads.mgmt.somee.com"],
+center > a[href="http://somee.com"],
+script[src*="ads.mgmt.somee.com"] {
+    display: none !important;
+}
+
+    /* Additionally, you can use the general sibling combinator to hide elements that follow the identified script tag */
+    script[src*="ads.mgmt.somee.com"] + * {
+        display: none !important;
+    }
